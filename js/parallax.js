@@ -20,7 +20,7 @@
     function getPositions() {
       targets = [];
       $('[data-scroll-on]').each(function () {
-        const value = $(this).data('scroll-on') || 0.3;
+        const value = $(this).data('scroll-on') || 0.2;
         const top = $(this).offset().top;
         targets.push({
           selector: $(this),
