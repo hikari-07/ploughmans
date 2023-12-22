@@ -201,6 +201,9 @@ footer p {
 /*--------------
     トップページ
  -------------- */
+#home main {
+  margin-left: 60px;
+}
 
 /* メイン（ファーストビュー） */
 
@@ -214,17 +217,22 @@ footer p {
 
 /* メイン（左側） */
 #home .main-menu {
-  width: 580px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
 }
 
 #home main h1 {
-  font-size: 50px;
+  font-size: 46px;
   font-family: 'Abril Fatface';
   color: #595757;
-  margin: 200px 90px 30px 160px;
   text-align: justify;
   white-space: nowrap;
   line-height: 1.2;
+  margin-bottom: 30px;
 }
 
 #home main ul {
@@ -234,7 +242,6 @@ footer p {
   align-items: flex-start;
   text-align: center;
   font-size: 16px;
-  margin: 0 60px 0 120px;
 }
 
 #home main ul li {
@@ -274,17 +281,31 @@ footer p {
   left: 0;
   background-color: transparent;
   margin: 0 auto;
+  width: 95%;
 }
 
 #home .main-image {
   display: flex;
   position: relative;
   margin-top: -50px;
+  width: 50%;
 }
 
 .bxslider {
   width: 620px !important;
-  height: 820px !important;
+  height: 100vh !important;
+}
+
+.bximg {
+  width: 100%;
+  height: 600px;
+}
+
+.bx-wrapper img {
+  width: 100%;
+  height: 600px;
+  min-height: 400px;
+  object-fit: cover;
 }
 
 #home .catch {
@@ -324,8 +345,8 @@ footer p {
   display: inline-block;
   background-color: #fff;
   font-size: 20px;
-  margin-bottom: 20px;
-  height: 50px;
+  margin-bottom: 8px;
+  height: 40px;
   padding: 10px;
 }
 
@@ -337,6 +358,7 @@ footer p {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  padding-bottom: 100px;
 }
 
 #home .sub-image img {
@@ -344,18 +366,28 @@ footer p {
   opacity: 0;
 }
 
+#home .sub-image-left {
+  width: 40%;
+}
+
 #home .sub-image img.on {
   opacity: 1;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+  height: 600px;
 }
 
 #home .info {
   margin-top: 30px;
-  margin-left: 100px;
+  margin-left: 30px;
   opacity: 0;
 }
 
 #home .info.on {
   opacity: 1;
+  width: fit-content;
 }
 
 #home .info h3 {

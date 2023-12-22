@@ -1,4 +1,44 @@
 @charset "UTF-8";
+@media screen and (max-width: 768px) {
+
+  /*--------------
+    トップページ
+ -------------- */
+
+  #home main h1 {
+    font-size: 30px;
+  }
+
+  #home h2 {
+    margin-bottom: 10px;
+  }
+
+  #home main ul li {
+    width: 90px;
+    height: 50px;
+    font-size: 12px;
+  }
+
+  #home main ul li i {
+    font-size: 16px;
+  }
+
+  #home .sub-image {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-bottom: 70px;
+  }
+
+  #home .info {
+    /* margin-left: 0px; */
+    margin-bottom: 30px;
+  }
+
+  #home .sub-image-left {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 480px) {
 
   /*--------------
@@ -111,6 +151,10 @@
     トップページ
  -------------- */
 
+  #home main {
+    margin-left: 0px;
+  }
+
   #home main .first-view {
     display: block;
   }
@@ -126,11 +170,17 @@
   #home main .first-view .main-image {
     display: block;
     position: relative;
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .bximg {
+    width: 100% !important;
   }
 
   #home .catch {
     margin-top: 0px;
-    top: 70px;
+    top: 100px;
     right: 0;
     position: absolute;
   }
@@ -160,15 +210,22 @@
     padding-bottom: 45px;
   }
 
+  #home .sub-image-left {
+    margin-bottom: 30px;
+  }
 
   #home .sub-image img {
     width: 100%;
     margin-bottom: 40px;
   }
 
+  #home .sub-image img.on {
+    height: 300px;
+  }
+
 
   #home .sub-image .info {
-    margin: 0 20px;
+    margin: 0px auto;
   }
 
   #home .info h3 {
@@ -181,6 +238,10 @@
     font-size: 14px;
   }
 
+  #home .info address span {
+    font-size: 11px;
+  }
+
   #home .info p {
     font-size: 14px;
   }
@@ -191,7 +252,7 @@
 
   #home footer {
     background-image: url(../images/footer-top-rs.png);
-    background-size: auto;
+    background-size: 100%;
   }
 
   #home footer p {
