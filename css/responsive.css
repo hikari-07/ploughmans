@@ -1,10 +1,37 @@
 @charset "UTF-8";
+@media screen and (max-width: 1024px) and (min-width:767px) {
+
+  #home footer,
+  #menu footer,
+  #blog footer,
+  #news footer,
+  #access footer,
+  #online footer {
+    height: 300px;
+  }
+
+  #home footer {
+    background-size: 100% auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+
+  #menu section.pan {
+    padding-bottom: 70px;
+  }
+
+  footer p {
+    margin-top: 220px;
+  }
+}
+
 @media screen and (max-width: 768px) and (min-width:481px) {
 
   /*--------------
     共通
  -------------- */
-
+  #home footer,
   #menu footer,
   #blog footer,
   #news footer,
@@ -85,6 +112,12 @@
 
   #home .sub-image-left {
     width: 100%;
+  }
+
+  #home footer {
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
   }
 
   /*--------------
@@ -326,7 +359,7 @@
     font-size: 20px;
     width: 180px;
     height: 50px;
-    margin: -50px 0 0 0;
+    margin: -46px 0 0 0;
     line-height: 50px;
     position: absolute;
     z-index: 1;
@@ -402,12 +435,13 @@
   }
 
   #home .sub-image {
-    display: block;
+    flex-direction: column-reverse;
     padding-bottom: 45px;
   }
 
   #home .sub-image-left {
     margin-bottom: 30px;
+    width: 100%;
   }
 
   #home .sub-image img {
@@ -416,7 +450,8 @@
   }
 
   #home .sub-image img.on {
-    height: 300px;
+    height: 450px;
+    width: 100%;
   }
 
 
@@ -449,6 +484,8 @@
   #home footer {
     background-image: url(../images/footer-top-rs.png);
     background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
   }
 
   #home footer p {
@@ -479,18 +516,11 @@
     margin: 0;
   }
 
-  #menu section .menu-text-left-2 {
-    /* padding-top: 60px; */
-  }
-
   #menu section .menu-text-right-1 {
     margin-left: 0px;
     width: 100%;
   }
 
-  #menu section .menu-text-left-3 {
-    /* padding-top: 60px; */
-  }
 
   #menu section h2 {
     font-size: 22px;

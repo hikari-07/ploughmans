@@ -213,8 +213,6 @@ main {
       rgba(182, 47, 82, 0.7) 75%,
       rgba(113, 58, 166, 0.7));
   color: #fff;
-  /* color: #FF8C00; */
-  /* background: -webkit-linear-gradient(0deg, #40E0D0, #FF8C00, #FF0080); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 36px;
@@ -466,7 +464,7 @@ main {
 
 /* フッター */
 #home footer {
-  background-image: url(../images/footer-top.jpg);
+  background-image: url(../images/footer-top-test.png);
   height: 450px;
   overflow: hidden;
   background-attachment: fixed;
@@ -490,7 +488,7 @@ main {
   width: 650px;
   height: 100px;
   line-height: 100px;
-  margin: -100px auto 60px auto;
+  margin: -96px auto 60px auto;
 }
 
 #menu span {
@@ -611,16 +609,6 @@ main {
 }
 
 /*--- 見出し ---*/
-#blog header h1 {
-  font-size: 40px;
-  font-weight: 700;
-  text-align: center;
-  background-color: #F7F6F5;
-  width: 650px;
-  height: 100px;
-  line-height: 100px;
-  margin: -100px auto 60px auto;
-}
 
 #blog .message {
   width: 55%;
@@ -732,7 +720,7 @@ main {
   align-items: center;
   max-width: 1000px;
   margin: 0 auto 80px;
-  width: 98%;
+  width: 94%;
 }
 
 #access .access-joho iframe {
@@ -878,7 +866,7 @@ main {
   justify-content: center;
   margin: 0 auto 60px;
   width: 100%;
-  max-width: 1000px;
+  max-width: 900px;
 }
 
 #online section {
@@ -887,7 +875,6 @@ main {
 }
 
 #online .online-top img {
-  margin-right: 20px;
   width: 100%;
 }
 
@@ -896,11 +883,10 @@ main {
   justify-content: center;
   margin: 0 auto 60px;
   width: 100%;
-  max-width: 1000px;
+  max-width: 900px;
 }
 
 #online .online-bottom img {
-  margin-right: 20px;
   width: 100%;
 }
 
@@ -932,6 +918,7 @@ main {
   background-attachment: fixed;
   background-size: 100% auto;
   background-position: center bottom;
+  background-repeat: no-repeat
 }
 
 /*-----------
@@ -939,10 +926,11 @@ main {
   -------------*/
 
 /* 見出し */
-#about header h1,
+
+#menu header h1,
+#blog header h1,
 #news header h1,
 #access header h1,
-#contact header h1,
 #online header h1 {
   font-size: 40px;
   font-weight: 700;
@@ -951,5 +939,13 @@ main {
   width: 650px;
   height: 100px;
   line-height: 100px;
-  margin: -100px auto 60px auto;
+  margin: -90px auto 60px auto;
+}
+
+#news header h1 {
+  margin-top: -80px;
+}
+
+#online header h1 {
+  margin-top: -70px;
 }
