@@ -464,7 +464,7 @@ main {
 
 /* フッター */
 #home footer {
-  background-image: url(../images/footer-top-test.png);
+  background-image: url(../images/footer-top.png);
   height: 450px;
   overflow: hidden;
   background-attachment: fixed;
@@ -911,7 +911,7 @@ main {
 }
 
 #online footer {
-  background-image: url(../images/footer-online-test.png);
+  background-image: url(../images/footer-online.png);
   height: 450px;
   width: 100%;
   overflow: hidden;
