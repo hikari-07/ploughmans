@@ -47,12 +47,42 @@ footer p {
   display: none;
 }
 
+.rs {
+  display: none;
+}
+
+.default {
+  display: block;
+}
+
+#menu .header-image,
+#menu .header-image,
+#blog .header-image,
+#news .header-image,
+#access .header-image,
+#online .header-image {
+  height: 330px;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
 #menu .header-image img,
 #blog .header-image img,
 #news .header-image img,
 #access .header-image img,
 #online .header-image img {
   display: none;
+}
+
+.h1-div {
+  margin-left: 60px;
+}
+
+main {
+  margin-left: 60px;
 }
 
 /* ------ ナビゲーションメニュー（fixed ）------ */
@@ -449,11 +479,6 @@ footer p {
 /* メニューページ ヘッダー*/
 #menu .header-image {
   background-image: url(../images/header-menu.jpg);
-  height: 330px;
-  overflow: hidden;
-  background-attachment: fixed;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 /* 見出し */
@@ -471,16 +496,35 @@ footer p {
 #menu span {
   display: block;
   font-size: 16px;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
   text-align: center;
 }
 
 /* メニュー一覧 */
 #menu section {
+  padding-top: 90px;
+  padding-bottom: 120px;
+}
+
+#menu section.sandwich {
+  padding-bottom: 80px;
+}
+
+#menu section.soup {
+  padding-bottom: 80px;
+}
+
+#menu section .section-inner {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 120px;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+#menu section .section-inner .img-div {
+  width: 40%;
 }
 
 #menu section h2 {
@@ -495,7 +539,7 @@ footer p {
 }
 
 #menu section img {
-  width: 40%;
+  width: 100%;
   height: auto;
   opacity: 0;
 }
@@ -505,30 +549,33 @@ footer p {
 }
 
 #menu section .menu-text-left-1 {
-  width: 600px;
+  width: 50%;
   margin-right: 50px;
-  margin-left: 100px;
+
 }
 
 #menu section .menu-text-left-2 {
-  width: 390px;
+  width: 50%;
   margin-right: 50px;
-  margin-left: 100px;
 }
 
 #menu section .menu-text-left-3 {
-  width: 330px;
-  margin-right: 200px;
-  margin-left: 100px;
+  width: 50%;
+  margin-right: 100px;
+}
+
+#menu section .menu-text-left-3 h2 {
+  /* background-color: red; */
+  white-space: nowrap;
 }
 
 #menu section .menu-text-right-1 {
-  width: 410px;
+  width: 50%;
   margin-left: 50px;
 }
 
 #menu section .menu-text-right-2 {
-  width: 410px;
+  width: 50%;
   margin-left: 100px;
 }
 
@@ -547,9 +594,12 @@ footer p {
 #menu footer {
   background-image: url(../images/footer-menu.jpg);
   height: 450px;
+  width: 100%;
   overflow: hidden;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
 }
 
 /*--------------
@@ -558,11 +608,6 @@ footer p {
 /* ブログページ ヘッダー*/
 #blog .header-image {
   background-image: url(../images/header-blog.jpg);
-  height: 330px;
-  overflow: hidden;
-  background-attachment: fixed;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 /*--- 見出し ---*/
@@ -578,8 +623,8 @@ footer p {
 }
 
 #blog .message {
-  width: 410px;
-  margin: 0 auto 90px auto;
+  width: 55%;
+  margin: 40px auto 70px auto;
 }
 
 #blog .message p {
@@ -591,30 +636,40 @@ footer p {
 #blog .blog-ichiran {
   display: flex;
   justify-content: center;
-  margin-bottom: 100px;
+  margin: 0 auto 100px;
+  width: 97%;
+  max-width: 1000px;
 }
 
 #blog .text {
-  background-color: #fff;
-  border-radius: 50%;
-  width: 210px;
-  height: 210px;
-  padding: 50px 30px 0 30px;
-  margin-top: -105px;
-  margin-left: 180px;
-  position: relative;
+  margin: 5px auto 0px;
+  width: 95%;
+}
+
+#blog section {
+  width: calc(100% / 3);
+  margin: 0 1px;
+}
+
+#blog section a {
+  width: 100%;
+}
+
+#blog section a img {
+  width: 100%;
 }
 
 #blog section time {
   display: inline-block;
-  font-size: 18px;
-  margin-bottom: 10px;
+  font-size: 14px;
+  margin-bottom: 3px;
   border-bottom: 1px solid #595757;
-  padding-bottom: 6px;
+  padding-bottom: 3px;
 }
 
 #blog .text p {
   line-height: 1.6;
+  font-size: 15px;
 }
 
 .hvr-trim:before {
@@ -669,27 +724,28 @@ footer p {
  ------------------ */
 #access .header-image {
   background-image: url(../images/header-access.jpg);
-  height: 330px;
-  overflow: hidden;
-  background-attachment: fixed;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 #access .access-joho {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  margin-bottom: 80px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto 80px;
+  width: 98%;
+}
+
+#access .access-joho iframe {
+  width: 49%;
 }
 
 #access .access-joho-right {
-  margin: 10px 0 0 100px;
-  margin-left: 100px;
+  margin-top: 10px;
+  width: 47%;
 }
 
 #access .access-joho-right h3 {
-  font-size: 30px;
+  font-size: 26px;
   font-family: 'Abril Fatface';
   margin-bottom: 30px;
 }
@@ -732,6 +788,7 @@ footer p {
   background-attachment: fixed;
   background-size: 100% auto;
   background-position: center bottom;
+  background-repeat: no-repeat;
 }
 
 /*-----------
@@ -739,27 +796,34 @@ footer p {
   -------------*/
 #news .header-image {
   background-image: url(../images/header-news.png);
-  height: 330px;
-  overflow: hidden;
-  background-attachment: fixed;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 #news main {
-  margin: 0 auto 90px auto;
+  margin-top: 80px;
+  margin-bottom: 90px;
 }
 
 #news .news-ichiran {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  margin-bottom: 50px;
+  margin: 0 auto 50px;
+  width: 90%;
+  max-width: 800px;
 }
 
 #news .news-ichiran .news-left {
-  width: 650px;
-  margin: 20px 30px auto 30px;
+  width: 70%;
+  margin-top: 10px;
+  padding-right: 10px;
+}
+
+#news section.news-right {
+  width: 30%;
+}
+
+#news section.news-right img {
+  width: 100%;
 }
 
 #news .news-ichiran .news-left .news-title {
@@ -793,11 +857,6 @@ footer p {
   -------------*/
 #online .header-image {
   background-image: url(../images/header-online.png);
-  height: 330px;
-  overflow: hidden;
-  background-attachment: fixed;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 #online .online-message {
@@ -811,26 +870,38 @@ footer p {
 
 #online .online-message p {
   margin-bottom: 20px;
+  font-size: 14px;
 }
 
 #online .online-top {
   display: flex;
   justify-content: center;
-  margin-bottom: 60px;
+  margin: 0 auto 60px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+#online section {
+  width: calc(100% / 3);
+  margin: 0 5px;
 }
 
 #online .online-top img {
   margin-right: 20px;
+  width: 100%;
 }
 
 #online .online-bottom {
   display: flex;
   justify-content: center;
-  margin-bottom: 60px;
+  margin: 0 auto 60px;
+  width: 100%;
+  max-width: 1000px;
 }
 
 #online .online-bottom img {
   margin-right: 20px;
+  width: 100%;
 }
 
 #online section p {
@@ -838,6 +909,7 @@ footer p {
   text-align: center;
   line-height: 1.5;
   margin-top: 10px;
+  font-size: 15px;
 }
 
 #online section p span {
@@ -853,7 +925,7 @@ footer p {
 }
 
 #online footer {
-  background-image: url(../images/footer-online.png);
+  background-image: url(../images/footer-online-test.png);
   height: 450px;
   width: 100%;
   overflow: hidden;

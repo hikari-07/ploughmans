@@ -1,5 +1,54 @@
 @charset "UTF-8";
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width:481px) {
+
+  /*--------------
+    共通
+ -------------- */
+
+  #menu footer,
+  #blog footer,
+  #news footer,
+  #access footer,
+  #online footer {
+    height: 200px;
+  }
+
+  footer p {
+    height: 60px;
+    line-height: 90px;
+    margin-top: 144px;
+  }
+
+  #menu header h1,
+  #blog header h1,
+  #news header h1,
+  #access header h1,
+  #online header h1 {
+    font-size: 30px;
+    width: 50%;
+    height: 90px;
+    margin: -90px auto 0px auto;
+  }
+
+  #menu .header-image,
+  #blog .header-image,
+  #news .header-image,
+  #access .header-image,
+  #online .header-image {
+    height: 190px;
+  }
+
+  .h1-div {
+    margin-left: 60px;
+  }
+
+  .rs {
+    display: block;
+  }
+
+  .default {
+    display: none;
+  }
 
   /*--------------
     トップページ
@@ -37,6 +86,149 @@
   #home .sub-image-left {
     width: 100%;
   }
+
+  /*--------------
+    メニューページ
+ -------------- */
+
+  #menu .main-p {
+    padding-top: 30px;
+  }
+
+  #menu section {
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
+
+  #menu section .menu-text-left-1 {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #menu section .menu-text-right-1 {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  #menu section .menu-text-left-2 {
+    width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  #menu section .menu-text-right-2 {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  #menu section .menu-text-left-3 {
+    width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  #menu section p {
+    line-height: 2;
+  }
+
+  #menu section .section-inner .img-div {
+    width: 45%;
+  }
+
+  #menu section img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  #menu section.pan img {
+    margin-left: 40%;
+    margin-top: -3%;
+  }
+
+  #menu section .section-inner {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  #menu section .section-inner.cr {
+    flex-direction: column-reverse;
+  }
+
+  .sandwich div.section-inner,
+  .tea div.section-inner {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  /*--------------
+    ニュースページ
+ -------------- */
+
+  #news .news-ichiran {
+    width: 90%;
+  }
+
+  #news section.news-right img {
+    width: 100%;
+  }
+
+  #news .news-ichiran .news-left {
+    margin: 0px 20px auto;
+  }
+
+  #news .news-ichiran .news-left .news-title {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  #news .news-ichiran .news-left .news-text {
+    font-size: 14px;
+  }
+
+  /*--------------
+    アクセスページ
+ -------------- */
+
+  #access .access-joho {
+    flex-direction: column-reverse;
+    margin-top: 50px;
+  }
+
+  #access .access-joho iframe {
+    width: 90%;
+  }
+
+  #access .access-joho-right {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    width: 80%;
+  }
+
+  #access .access-joho-right h3 {
+    white-space: nowrap;
+    font-size: 27px;
+    text-align: center;
+  }
+
+  #access .access-joho-right address span {
+    margin-left: 0px;
+  }
+
+  #access footer {
+    background-repeat: no-repeat;
+  }
+
+
+  #online .online-message {
+    margin-top: 70px;
+    width: 90%;
+    margin: 70px auto 40px;
+  }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -78,6 +270,10 @@
 
   footer p small {
     font-size: 10px;
+  }
+
+  main {
+    margin-left: 0px;
   }
 
   /*--- メニューボタン ---*/
@@ -265,13 +461,17 @@
 
   #menu span {
     font-size: 12.5px;
-    margin-bottom: 60px;
+    margin-bottom: 0px;
   }
 
   #menu section {
     display: block;
-    margin-bottom: 0px;
+    padding-top: 60px;
     padding-bottom: 70px;
+  }
+
+  #menu section .section-inner {
+    flex-direction: column;
   }
 
   #menu section .menu-text-left-1 {
@@ -280,7 +480,7 @@
   }
 
   #menu section .menu-text-left-2 {
-    padding-top: 60px;
+    /* padding-top: 60px; */
   }
 
   #menu section .menu-text-right-1 {
@@ -289,7 +489,7 @@
   }
 
   #menu section .menu-text-left-3 {
-    padding-top: 60px;
+    /* padding-top: 60px; */
   }
 
   #menu section h2 {
@@ -305,9 +505,12 @@
   }
 
   #menu section img {
-    width: 70%;
     display: block;
     margin: 0 auto;
+  }
+
+  #menu section .section-inner .img-div {
+    width: 55%;
   }
 
   #menu .menu-text {
@@ -321,7 +524,8 @@
     padding-top: 60px;
   }
 
-  #menu .tea {
+  #menu .sandwich div.section-inner,
+  #menu .tea div.section-inner {
     display: flex;
     flex-direction: column-reverse;
   }
@@ -333,11 +537,6 @@
   #menu .pannacotta img {
     width: 50%;
     margin-right: 0px;
-  }
-
-  #menu footer {
-    background-image: url(../images/footer-menu-rs.png);
-    background-size: auto;
   }
 
   /*--------------
@@ -372,6 +571,8 @@
 
   #blog .blog-ichiran section {
     margin-bottom: 50px !important;
+    width: 98%;
+    margin: 0 auto;
   }
 
   #blog .blog-ichiran section.last {
@@ -420,7 +621,8 @@
 
   #news .news-ichiran {
     flex-direction: column-reverse;
-    margin: 0 20px 40px 20px;
+    margin: 0 auto 40px;
+    width: 92%;
   }
 
   #news .news-ichiran .news-left {
@@ -454,12 +656,12 @@
 
   #access .access-joho {
     flex-direction: column-reverse;
+    width: 90%;
   }
 
   #access .access-joho-right {
-    margin-left: 0px;
-    margin: 0 0 30px 0;
-    width: 100%;
+    margin: 0 auto 30px;
+    width: 90%;
   }
 
   #access .access-joho-right h3 {
@@ -497,7 +699,7 @@
     margin-bottom: 10px;
   }
 
-  #access iframe {
+  #access .access-joho iframe {
     width: 100%;
     height: 330px;
   }
@@ -509,6 +711,10 @@
   /*-----------
   オンラインページ
   -------------*/
+
+  #online main {
+    margin-bottom: 60px;
+  }
 
   #online .online-message p {
     line-height: 1.5;
@@ -528,11 +734,18 @@
 
   #online section {
     margin-bottom: 30px;
+    width: 95%;
+    margin: 0 auto 40px;
   }
 
   #online section p {
     line-height: 1.3;
     margin-top: 4px;
+  }
+
+  #online .online-top,
+  #online .online-bottom {
+    margin: 0 auto;
   }
 
 }
